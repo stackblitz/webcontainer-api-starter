@@ -2,6 +2,8 @@ import './style.css'
 import { WebContainer } from '@webcontainer/api';
 import { files } from './files';
 
+Object.assign(window, WEBCONTAINER_STARTER_ENV);
+
 /** @type {import('@webcontainer/api').WebContainer}  */
 let webcontainerInstance;
 
@@ -12,7 +14,7 @@ window.addEventListener('load', async () => {
   });
 
   // Call only once
-  webcontainerInstance = await WebContainer.boot();
+  webcontainerInstance = await WebContainer.boot({ coep: 'credentialless'});
   await webcontainerInstance.mount(files);
 
   const exitCode = await installDependencies();
