@@ -25,7 +25,7 @@ Please note that your deployed page must be served over HTTPS. This is not neces
 
 ## Demo
 
-Check [the WebContainer API demo app](webcontainer.new).
+Check [the WebContainer API demo app](https://webcontainer.new).
 
 Here's an example `main.ts` file:
 
