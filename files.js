@@ -9,7 +9,7 @@ const app = express();
 const port = 3111;
   
 app.get('/', (req, res) => {
-    res.send('Welcome to a WebContainers app! 🥳');
+    res.send('welcome to spuntentertainment! ');
 });
   
 app.listen(port, () => {
@@ -21,7 +21,7 @@ app.listen(port, () => {
       file: {
         contents: `
           {
-            "name": "example-app",
+            "name": "spuntentertainment-web-con",
             "type": "module",
             "dependencies": {
               "express": "latest",

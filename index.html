@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/stackblitz-favicon-editor.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My first WebContainers app</title>
-  </head>
-  <body>
-    <header>
-      <h1>Hello, <span class="wc">WebContainers API</span>!</h1>
-      <p>
-        <a class="docs" href="https://webcontainers.io" target="_blank" rel="noreferrer noopener">
-          Read the docs 📖
-        </a>
-      </p>
-    </header>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>spuntentertainment-player</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="player">
+    <!-- Audio element required by updated JS -->
+    <audio></audio>
+    <button class="play-pause">▶</button>
+    <img src="./public/spunt-cover--1..png" class="cover-image">
+    <div class="progress-bar"></div>
+    <div class="time-display">
+      <span class="current-time">0:00</span> / 
+      <span class="duration">0:00</span>
+    </div>
+    <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="1">
+  </div>
+  <div class="episode"></div>
+  <script type="module" src="./main.js"></script>
+</body>
 </html>
